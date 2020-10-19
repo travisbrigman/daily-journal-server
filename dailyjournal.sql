@@ -60,3 +60,12 @@ INSERT INTO `Entries` VALUES (null, "2020-08-21T10:50", "effect hooks", "today w
 INSERT INTO `Entries` VALUES (null, "2020-08-21T10:41", "State managemnent", "how many states and who manages them", 3, 2);
 INSERT INTO `Entries` VALUES (null, "2020-08-24T20:38", "Python", "what is whitespace", 2, 3);
 INSERT INTO `Entries` VALUES (null, "2020-08-21T15:13", "The Internet", "What it is and what it does", 5, 3);
+
+INSERT INTO `Entries_Tags` VALUES (null, 1, 1);
+INSERT INTO `Entries_Tags` VALUES (null, 1, 2);
+INSERT INTO `Entries_Tags` VALUES (null, 2, 2);
+INSERT INTO `Entries_Tags` VALUES (null, 2, 3);
+INSERT INTO `Entries_Tags` VALUES (null, 3, 1);
+INSERT INTO `Entries_Tags` VALUES (null, 3, 6);
+INSERT INTO `Entries_Tags` VALUES (null, 4, 5);
+INSERT INTO `Entries_Tags` VALUES (null, 4, 1);
