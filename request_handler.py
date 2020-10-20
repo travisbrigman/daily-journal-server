@@ -1,6 +1,8 @@
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from entries import get_all_entries, get_single_entry, delete_entry, create_entry
+from tags import get_all_entries_tags, get_all_tags
+from entries import get_all_entries, get_single_entry, delete_entry, create_entry, update_entry
+from moods import get_all_moods
 
 
 
@@ -66,6 +68,13 @@ class HandleRequests(BaseHTTPRequestHandler):
                     response = f"{get_single_entry(id)}"
                 else:
                     response = f"{get_all_entries()}"
+
+            if resource == "moods":
+                    response = f"{get_all_moods()}"
+            if resource == "tags":
+                    response = f"{get_all_tags()}"
+            if resource == "entries_tags":
+                    response = f"{get_all_entries_tags()}"
 
 
         # Response from parse_url() is a tuple with 3
