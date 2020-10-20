@@ -1,3 +1,4 @@
+from instructors import get_all_instructors
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from tags import get_all_entries_tags, get_all_tags
@@ -75,6 +76,8 @@ class HandleRequests(BaseHTTPRequestHandler):
                     response = f"{get_all_tags()}"
             if resource == "entries_tags":
                     response = f"{get_all_entries_tags()}"
+            if resource == "instructors":
+                    response = f"{get_all_instructors()}"
 
 
         # Response from parse_url() is a tuple with 3
